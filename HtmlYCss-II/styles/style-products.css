@@ -103,6 +103,33 @@ footer p {
     margin-top: 10px;
 }
 
+/* Contacto */
+
+.contenedor-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.contenedor-form label,
+.contenedor-form input{
+    margin-top: 10px;
+    width: 50%;
+    
+}
+
+#submit{
+    width: auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+
+
+
+
 @media(min-width: 707px){
     .contenedor-header{
         justify-content: space-between;

@@ -1,0 +1,46 @@
+header h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+}
+
+#banner{
+    width: 100%;
+}
+
+.informacion{
+    background-color: #CCCC;
+    text-align: center;
+    padding: 20px;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+em strong{
+    color: red;
+}
+
+h2{
+    text-align: center;
+}
+
+.diferenciales{
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    padding: 30px;
+}
+
+
+.diferenciales ul{
+    font-size: 1.5rem;
+}
+
+.imgDiferenciales{
+    width: 50%;   
+}

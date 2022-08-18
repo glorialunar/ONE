@@ -66,7 +66,7 @@ main{
 }
 
 nav li a:hover{
-    color: #c78c19;
+    color: #c78c19;;
     text-decoration: underline;
     font-size: 18px;
 }
@@ -74,6 +74,15 @@ nav li a:hover{
 .contenedor li:hover{
     cursor: pointer;
     box-shadow: 7px 7px 15px black;
+}
+
+.contenedor li:hover h1{
+    font-size: 2em;
+}
+
+.contenedor li:active{
+    border: 2px solid #088c19;
+    box-shadow: none;  
 }
 
 @media(min-width: 707px){

@@ -203,6 +203,13 @@ td,th{
     font-size: 1.8em;
     margin-bottom: 1em;
     font-weight: 300;
+    clear: left;
+}
+
+.img-utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 1.2em 1.2em 0;
 }
 
 .about-alura p{
@@ -266,7 +273,6 @@ td,th{
         width: 40%;
         font-size: 18px;
     }
-
     
 }
 

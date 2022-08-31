@@ -9,7 +9,7 @@ header{
 }
 
 .contenedor-header img{
-    height: 15vh;
+    max-width: 60px;
 }
 
 nav ul{
@@ -123,9 +123,10 @@ footer p {
 .contenedor-form input,
 .contenedor-form textarea{
     margin-top: 10px;
+    padding: 5px;
 }
 
-.contenedor-form section p {
+.contenedor-form fieldset legend {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 10px;
@@ -163,13 +164,14 @@ footer p {
     }
 
     .contenedor-header img{
-        height: 20vh;
+        max-width: 80px;
+        margin-left: 50px;
     }
 
     nav ul{
         display: flex;
         padding: 0;
-        margin-right: 10px;   
+        margin-right: 50px;   
     }
     
     nav li a{
@@ -178,17 +180,20 @@ footer p {
 
     .contenedor-form{
         width: 560px;
+        margin-left: 50px ;
     }
 
 }
 
 @media(min-width: 1280px){
-    .contenedor-header{
+    .contenedor-header,
+    .contenedor, 
+    .contenedor-contacto{
         width: 1280px;
         margin: 0 auto;
     }
-    .contenedor{
-        width: 1280px;
-        margin: 0 auto;
+    
+    .contenedor-form{
+        margin-left: 50px ;
     }
 }

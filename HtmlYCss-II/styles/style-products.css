@@ -33,14 +33,14 @@ main{
     margin-bottom: 50px;
 }
 
-.contenedor{
+.contenedor-servicios{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
 }
 
-.contenedor li{
+.contenedor-servicios li{
     border: 1.5px solid black;
     border-radius: 10px;
     padding: 40px 20px;
@@ -48,7 +48,7 @@ main{
     width: 281px;
 }
 
-.contenedor li h1{
+.contenedor-servicios li h1{
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
@@ -74,11 +74,11 @@ nav li a:hover{
     box-shadow: 7px 7px 15px black;
 }
 
-.contenedor li:hover h1{
+.contenedor-servicios li:hover h1{
     font-size: 2em;
 }
 
-.contenedor li:active{
+.contenedor-servicios li:active{
     border: 2px solid #088c19;
     box-shadow: none;  
 }
@@ -105,11 +105,15 @@ footer p {
 
 /* Contacto */
 
-.contenedor-form{
-    display: flex;
-    flex-direction: column;
+.contenedor-main-contacto{
     margin: 50px auto 50px;
     width: 80%;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .contenedor-form label{
@@ -120,19 +124,20 @@ footer p {
     justify-content: flex-start;
 }
 
-.contenedor-form input,
-.contenedor-form textarea{
+.informacion{
     margin-top: 10px;
     padding: 5px;
+    width: 90%;
 }
 
-.contenedor-form fieldset legend {
+
+.contenedor-form fieldset legend, h2 {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-.contacto{
+.medio-contacto{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -140,7 +145,7 @@ footer p {
     margin: 20px 0;
 }
 
-.horarioAtencion select{
+.horario-contacto select{
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px #3c3c3c solid;
@@ -148,26 +153,37 @@ footer p {
     cursor: pointer;
 }
 
-.submit{
+.boton-submit{
+    display: flex;
+    justify-content: center;
     width: 120px;
     font-size: 10px;
     font-weight: bold;
-    margin: 20px auto 0px;
+    margin: 20px auto;
     padding: 15px 0;
     border: none;
     border-radius: 15px;
     background-color: #666666;
     color: #FFFFFF;
-    margin-top: 20px;
     cursor: pointer;
     transition: 1s all;
 }
 
-.submit:hover{
+.boton-submit:hover{
     background: #3c3c3c;
     transform: scale(1.2);
 }
 
+thead{
+    background: #8c8c8c;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 5px;
+}
 
 @media(min-width: 707px){
     .contenedor-header{
@@ -191,10 +207,9 @@ footer p {
 
     .contenedor-form{
         width: 560px;
-        margin-left: 50px ;
     }
 
-    .submit{
+    .boton-submit{
         width: 40%;
         font-size: 18px;
     }
@@ -203,13 +218,9 @@ footer p {
 
 @media(min-width: 1280px){
     .contenedor-header,
-    .contenedor, 
-    .contenedor-contacto{
+    .contenedor-servicios{
         width: 1280px;
         margin: 0 auto;
     }
     
-    .contenedor-form{
-        margin-left: 50px ;
-    }
 }

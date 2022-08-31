@@ -25,23 +25,23 @@
 
     <main>
         <form class="contenedor-form">
-            <label for="nombreapellido">Nombre y Apellido:</label>
+            <label for="nombreapellido" required>Nombre y Apellido:</label>
             <input type="text" id="nombreapellido">
 
-            <label for="email">Correo Electrónico:</label>
-            <input type="text" id="email">
+            <label for="email" required>Correo Electrónico:</label>
+            <input type="email" id="email">
 
-            <label for="telefono">Teléfono:</label>
-            <input type="number" id="telefono">
+            <label for="telefono" required>Teléfono:</label>
+            <input type="tel" id="telefono">
 
-            <label for="mensaje">Mensaje:</label>
+            <label for="mensaje" required>Mensaje:</label>
             <textarea rows="10" id="mensaje"></textarea>
 
             <section class="contacto">
                 <p>¿Cómo le gustaría que lo contactemos?</p>
 
                 <label for="radio-email">
-                    <input type="radio" name="contacto" id="radio-email" value="email">
+                    <input type="radio" name="contacto" id="radio-email" value="email" checked >
                     Email
                 </label>
     

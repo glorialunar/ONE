@@ -142,19 +142,30 @@ footer p {
 
 .horarioAtencion select{
     margin-bottom: 10px;
-    background-color: grey;
-    color: #FFFFFF;
     border-radius: 5px;
+    border: 1px #3c3c3c solid;
+    padding: 5px;
+    cursor: pointer;
 }
 
-#submit{
-    width: 150px;
+.submit{
+    width: 120px;
+    font-size: 10px;
+    font-weight: bold;
     margin: 20px auto 0px;
-    padding: 10px;
+    padding: 15px 0;
+    border: none;
     border-radius: 15px;
-    background-color: black;
+    background-color: #666666;
     color: #FFFFFF;
     margin-top: 20px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.submit:hover{
+    background: #3c3c3c;
+    transform: scale(1.2);
 }
 
 
@@ -181,6 +192,11 @@ footer p {
     .contenedor-form{
         width: 560px;
         margin-left: 50px ;
+    }
+
+    .submit{
+        width: 40%;
+        font-size: 18px;
     }
 
 }

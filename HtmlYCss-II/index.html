@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles/style-home.css" rel="stylesheet" type="text/css">
+    <link href="./styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="./styles/style.css" rel="stylesheet" type="text/css">
     <title>Barbería Alura</title>
 </head>
 <body>
     <header>
-        <h1>BARBERÍA ALURA</h1>
-
-        <nav class="header-nav">
-            <ul>
-                <li><a href="./productos.html" target="_blank">Productos</a></li>
-                <li><a href="./contacto.html" target="_blank">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="informacion">
-            <h1>Sobre la Barbería Alura</h1>
+        <section class="contenedor-header">
+            <img src="./img/logo.png" alt="logo"/>
     
+            <nav>
+                <ul>
+                    <li><a href="./index.html" target="_blank">Home</a></li>
+                    <li><a href="./servicios.html" target="_blank">Servicios</a></li>
+                    <li><a href="./contacto.html" target="_blank">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    
+    <img id="banner" src="./img/banner.jpg" alt="Banner de barbería" />
+
+    <main class="contenedor-main-home">
+        <section class="about-alura">
+            <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+
             <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
     
-            <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
+            <p><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
     
             <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
         </section>
 
         <section>
-            <h2>Diferenciales</h2>
+            <h2 class="titulo-principal">Diferenciales</h2>
             <div class="diferenciales">
                 <ul>
                     <li>Atención personalizada a los clientes</li>
@@ -40,7 +46,7 @@
                     <li>Profesionales certificados</li>
                 </ul>
     
-                <img class="imgDiferenciales" src="./img/diferenciales.jpg" alt="Imagen de diferenciales"/>
+                <img class="img-diferenciales" src="./img/diferenciales.jpg" alt="Imagen de diferenciales"/>
             </div>
         </section>
     </main>

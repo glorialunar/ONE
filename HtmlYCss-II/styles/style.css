@@ -1,3 +1,5 @@
+/* Header */
+
 header{
     background-color: #CCCCCC;
 }
@@ -29,59 +31,7 @@ nav li a{
     font-size: 10px;
 }
 
-main{
-    margin-bottom: 50px;
-}
-
-.contenedor-servicios{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-}
-
-.contenedor-servicios li{
-    border: 1.5px solid black;
-    border-radius: 10px;
-    padding: 40px 20px;
-    margin: 50px 1.5% 0px 1.5%;
-    width: 281px;
-}
-
-.contenedor-servicios li h1{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.producto-descripcion{
-    margin-top: 10px;
-}
-
-.producto-precio{
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-nav li a:hover{
-    color: #c78c19;;
-    text-decoration: underline;
-    font-size: 18px;
-}
-
-.contenedor li:hover{
-    cursor: pointer;
-    box-shadow: 7px 7px 15px black;
-}
-
-.contenedor-servicios li:hover h1{
-    font-size: 2em;
-}
-
-.contenedor-servicios li:active{
-    border: 2px solid #088c19;
-    box-shadow: none;  
-}
+/* Footer */
 
 footer{
     background: url(../img/bg.jpg);
@@ -103,9 +53,68 @@ footer p {
     margin-top: 10px;
 }
 
+/* Servicios */
+
+.contenedor-main-servicios{
+    margin-bottom: 50px;
+}
+
+.contenedor-servicios{
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.contenedor-servicios li{
+    border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 40px 20px;
+    margin: 50px 1.5% 0px 1.5%;
+    width: 281px;
+}
+
+.contenedor-servicios li h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.servicio-descripcion{
+    margin-top: 10px;
+}
+
+.servicio-precio{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+nav li a:hover{
+    color: #c78c19;;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.contenedor-servicios li:hover{
+    cursor: pointer;
+    box-shadow: 7px 7px 15px black;
+}
+
+.contenedor-servicios li:hover h1{
+    font-size: 2em;
+}
+
+.contenedor-servicios li:active{
+    border: 2px solid #088c19;
+    box-shadow: none;  
+}
+
+
 /* Contacto */
 
-.contenedor-main-contacto{
+.contenedor-main-contacto,
+.contenedor-main-home{
     margin: 50px auto 50px;
     width: 80%;
 }
@@ -124,12 +133,11 @@ h1{
     justify-content: flex-start;
 }
 
-.informacion{
+.datos-contacto{
     margin-top: 10px;
     padding: 5px;
     width: 90%;
 }
-
 
 .contenedor-form fieldset legend, h2 {
     font-weight: bold;
@@ -185,6 +193,50 @@ td,th{
     padding: 5px;
 }
 
+/* Home */
+#banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    font-weight: 300;
+}
+
+.about-alura p{
+    margin-bottom: 1em;
+}
+
+.about-alura p strong{
+    font-weight: bold;
+}
+
+.about-alura p em{
+    font-style: italic;
+}
+
+.diferenciales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-style: italic;
+    padding: 20px;
+}
+
+.diferenciales ul,
+.diferenciales ul li{
+    margin-bottom: 1em;
+}
+
+.img-diferenciales{
+    width: 60%;
+}
+
+
+
+/* Media-query */
 @media(min-width: 707px){
     .contenedor-header{
         justify-content: space-between;
@@ -205,6 +257,7 @@ td,th{
         font-size: 16px;
     }
 
+    /* Contacto */
     .contenedor-form{
         width: 560px;
     }
@@ -214,6 +267,14 @@ td,th{
         font-size: 18px;
     }
 
+    
+}
+
+@media(min-width:814px){
+    /* Home */
+    .diferenciales{
+        gap: 1em;
+    } 
 }
 
 @media(min-width: 1280px){

@@ -53,17 +53,17 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* justify-content: space-between; */
     font-style: italic;
     padding: 20px;
 }
 
 .diferenciales ul{
     font-size: 1.2rem;
+    margin: 15px;
 }
 
 .imgDiferenciales{
-    width:50%;   
+    width:50%; 
 }
 
 footer{

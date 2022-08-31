@@ -117,8 +117,7 @@ nav li a:hover{
 
 /* Contacto */
 
-.contenedor-main-contacto,
-.contenedor-main-home{
+.contenedor-main-contacto{
     margin: 50px auto 50px;
     width: 80%;
 }
@@ -198,6 +197,12 @@ td,th{
 }
 
 /* Home */
+
+.contenedor-main-home{
+    width: 90%;
+    margin: 0 auto;
+}
+
 #banner{
     width: 100%;
 }
@@ -205,7 +210,7 @@ td,th{
 .titulo-principal{
     text-align: center;
     font-size: 1.8em;
-    margin-bottom: 1em;
+    margin: 1em 0;
     font-weight: 300;
     clear: left;
 }
@@ -216,7 +221,8 @@ td,th{
     margin: 0 1.2em 1.2em 0;
 }
 
-.about-alura p{
+.about-alura p,
+.mapa p{
     margin-bottom: 1em;
 }
 
@@ -226,6 +232,12 @@ td,th{
 
 .about-alura p em{
     font-style: italic;
+}
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .diferenciales{

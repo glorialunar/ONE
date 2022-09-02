@@ -11,7 +11,6 @@ body{
     width: 90%;
     margin: 0 auto;
     background-color: #F3F5FC;
-    border: 1px solid red;
     padding: 1.5rem 0.5rem;
     display: flex;
     flex-direction: column;
@@ -33,14 +32,14 @@ body{
     padding: 0.4rem;
     margin-bottom: 5rem;
     resize: none;
+    background: transparent;
 }
 
 .text::placeholder{
-    background: transparent;
     color: #0A3871;
     font-size: 1.2rem;
     text-align: left;    
-    opacity: 0.6;
+    opacity: 0.7;
     padding-left: 0.2rem ;
 }
 
@@ -88,7 +87,6 @@ body{
     background-color: white;
     box-shadow: 2px 24px 32px -8px black;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .response-section img{
@@ -114,9 +112,85 @@ body{
 
 .copy-btn{
     background-color: white;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     border: 1px solid #0A3871;
     color: #0A3871;
     padding: 1rem;
     width: 60vw;
+}
+
+@media(min-width:768px){
+    .button-container{
+        flex-wrap: nowrap;
+    }
+}
+
+@media(min-width:1000px){
+    body{
+        flex-direction: row;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .logo{
+        margin-top: 2rem;
+    }
+
+    .main-container{
+        display: flex;
+        height: 100vh;
+        padding: 2rem;
+    }
+
+    .form-container{
+        width: 60vw;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .text-container{
+        height: 80vh;
+        justify-content: space-between;
+    }
+
+    .text{
+        margin-top: 5rem;
+    }
+
+    .button-container{
+        margin-bottom: 1rem;
+    }
+
+    .response-section{
+        width: 20vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .response-section img{
+        display: block;
+        width: 15vw;
+        margin-bottom: 2rem;
+    }
+
+    .response-message{
+        width: 18vw;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .response-message textarea{
+        width: 15vw;
+        height: 90%;   
+    }
+
+    .copy-btn{
+        width: 15vw;
+    }
+
 }

@@ -1,13 +1,13 @@
 window.onload = function (){
     let textarea = document.getElementById("text");  
     let showedMsg = document.getElementById("message"); 
-    
+
     document.getElementById("response-message").style.display = "none";
     checkInput();
 
     document.getElementById("encrypt").onclick = (e) => {
         e.preventDefault();
-        const textEncrypted = encrypt(textarea.value.toLowerCase());
+        const textEncrypted = encrypt(textarea.value);
         showedMsg.value = textEncrypted;
         textarea.value = "";
         show();
@@ -15,7 +15,7 @@ window.onload = function (){
 
     document.getElementById("decrypt").onclick = (e) => {
         e.preventDefault();
-        const textDecrypted = decrypt(textarea.value.toLowerCase());
+        const textDecrypted = decrypt(textarea.value);
         showedMsg.value = textDecrypted;
         textarea.value = "";
         show();
@@ -28,14 +28,21 @@ window.onload = function (){
         showedMsg.value = "";
     }
     
+    function isValid(msg){
+        return /^[a-z\s]+$/g.test(msg);
+    }
+    
     function encrypt (msgEncrypted){ 
-        msgEncrypted = textarea.value
-            .replace(/e/gi, "enter")
-            .replace(/i/gi, "imes")
-            .replace(/a/gi, "ai")
-            .replace(/o/gi, "ober")
-            .replace(/u/gi,"ufat");
-
+        if(isValid(msgEncrypted)){
+            msgEncrypted = textarea.value
+                .replace(/e/gi, "enter")
+                .replace(/i/gi, "imes")
+                .replace(/a/gi, "ai")
+                .replace(/o/gi, "ober")
+                .replace(/u/gi,"ufat");            
+        } else {
+            alert("Ups!, intenta nuevamente sin mayúsculas ni caracteres especiales");
+        }
         return(msgEncrypted);
     }
     
@@ -49,6 +56,8 @@ window.onload = function (){
         
         return(msgDecrypted);
     }
+
+
 
     function show(){
         document.getElementById("no-message").style.display = "none";

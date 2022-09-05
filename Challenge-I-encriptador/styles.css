@@ -155,24 +155,25 @@ body{
     }
 
     .form-container{
-        height:45vh;
+        height:60vh;
     }
 
     .text-container{
-        height: 35vh;
-        justify-content: space-between;
-    }
-
-    .info-alert{
-        margin-bottom: 0;
+        height: 50vh;
     }
 
     .button-container{
         flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: 0.5rem;
     }
 
     .encrypt-btn, .decrypt-btn{
         width: 40vw;
+    }
+
+    .response-section{
+        width: 100%;
     }
 
     .no-message{

@@ -68,7 +68,8 @@ footer p {
 }
 
 .contenedor-servicios{
-    margin-bottom: 50px;
+    width: 80%;
+    margin: 0 auto 50px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -242,13 +243,16 @@ td,th{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-style: italic;
     padding: 20px;
 }
 
 .diferenciales ul,
-.diferenciales ul li{
+.item{
     margin-bottom: 1em;
+}
+
+.item:first-child{
+    font-weight: bold;
 }
 
 .img-diferenciales{

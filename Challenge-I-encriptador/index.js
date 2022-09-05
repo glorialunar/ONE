@@ -46,13 +46,17 @@ window.onload = function (){
         return(msgEncrypted);
     }
     
-    function decrypt (msgDecrypted){ 
-        msgDecrypted = textarea.value
-            .replace(/enter/gi, "e")
-            .replace(/imes/gi, "i")
-            .replace(/ai/gi, "a")
-            .replace(/ober/gi, "o")
-            .replace(/ufat/gi, "u");
+    function decrypt (msgDecrypted){
+        if(isValid(msgDecrypted)){
+            msgDecrypted = textarea.value
+                .replace(/enter/gi, "e")
+                .replace(/imes/gi, "i")
+                .replace(/ai/gi, "a")
+                .replace(/ober/gi, "o")
+                .replace(/ufat/gi, "u");
+        } else {
+            alert("Ups!, intenta nuevamente sin mayúsculas ni caracteres especiales");
+        }
         
         return(msgDecrypted);
     }

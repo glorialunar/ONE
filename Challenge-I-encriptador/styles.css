@@ -47,6 +47,7 @@ body{
     height: 35vh;
     resize: none;
     background: transparent;
+    color:#0A3871;
 }
 
 .text::placeholder{
@@ -222,10 +223,10 @@ body{
 
     .text{
         margin-top: 5rem;
+        font-size: 1.5rem;
     }
 
     .button-container{
-        margin-top: 0;
         margin-bottom: 2.2rem;
     }
 
@@ -254,6 +255,7 @@ body{
     .response-message textarea{
         width: 15vw;
         height: 90%; 
+        font-size: 1.5rem;
     }
 
     .copy-btn{

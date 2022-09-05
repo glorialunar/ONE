@@ -12,11 +12,9 @@ body{
     height: 100vh;
     margin: 0 auto;
     background-color: #F3F5FC;
-    /* padding: 1.5rem 0.5rem; */
-    padding: 1.5rem 0.5rem 0 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .logo{
@@ -31,7 +29,7 @@ body{
 }
 
 .form-container{
-    height: 60vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -61,7 +59,12 @@ body{
 
 .info-alert{
     display: flex;
-    align-content: center;
+    align-items: center;
+}
+
+.info-alert img{
+    width: 1rem;
+    height: 1rem;
 }
 
 .info{
@@ -80,7 +83,7 @@ body{
 
 .encrypt-btn, .decrypt-btn{
     border-radius: 1.5rem;
-    padding: 1.5rem;
+    padding: 1rem;
     width: 80vw;
 }
 
@@ -103,6 +106,9 @@ body{
     background-color: white;
     box-shadow: 2px 24px 32px -8px black;
     margin: 1.5rem auto;
+    height: 30vh;
+    display: flex;
+    align-items: center;
 }
 
 .response-section img{
@@ -117,6 +123,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .response-message textarea{
@@ -135,7 +142,18 @@ body{
     width: 60vw;
 }
 
+.no-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 @media(min-width:768px){
+    .main-container{
+        justify-content: space-around;
+    }
+
     .form-container{
         height:45vh;
     }
@@ -157,10 +175,8 @@ body{
         width: 40vw;
     }
 
-    .noMessage-section{
+    .no-message{
         height: 20vh;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
     }
 
@@ -199,7 +215,7 @@ body{
     }
 
     .text-container{
-        height: 80vh;
+        height: 90vh;
         justify-content: space-between;
     }
 
@@ -208,14 +224,18 @@ body{
     }
 
     .button-container{
-        margin-bottom: 1rem;
+        margin-top: 0;
+        margin-bottom: 2.2rem;
+    }
+
+    .encrypt-btn, .decrypt-btn{
+        padding: 1.5rem;
     }
 
     .response-section{
         width: 20vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 100%;
+        margin: 0px;
     }
 
     .response-section img{
@@ -232,7 +252,7 @@ body{
 
     .response-message textarea{
         width: 15vw;
-        height: 90%;   
+        height: 90%; 
     }
 
     .copy-btn{

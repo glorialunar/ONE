@@ -21,7 +21,7 @@
 .populares__contenido{
     display: flex;
     flex-wrap: wrap;
-    grid-area: contenido;
+    width: 100%;
     padding: 1rem 0;
     justify-content: space-between;
 }

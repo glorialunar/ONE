@@ -1,9 +1,5 @@
 .populares{
     padding: 3rem 2rem;
-    display: grid;
-    grid-template-areas: 
-        "info"
-        "contenido";
 }
 
 .populares__header{
